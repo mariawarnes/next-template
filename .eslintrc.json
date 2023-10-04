@@ -1,0 +1,15 @@
+{
+  "root": true,
+  "extends": ["next/core-web-vitals", "plugin:jsx-a11y/recommended", "plugin:cypress/recommended"],
+  "plugins": ["testing-library", "cypress"],
+  "overrides": [
+    // Only uses Testing Library lint rules in test files
+    {
+      "files": [
+        "**/__tests__/**/*.[jt]s?(x)",
+        "**/?(*.)+(spec|test).[jt]s?(x)"
+      ],
+      "extends": ["plugin:testing-library/react", "plugin:jsx-a11y/recommended"]
+    }
+  ]
+}
