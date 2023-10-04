@@ -15,20 +15,20 @@
 /**
  * @type {Cypress.PluginConfig}
  */
-const { lighthouse, prepareAudit } = require("@cypress-audit/lighthouse");
-const fs = require("fs");
+const { lighthouse, prepareAudit } = require('@cypress-audit/lighthouse');
+const fs = require('fs');
 
 module.exports = (on, config) => {
-  on("before:browser:launch", (browser = {}, launchOptions) => {
+  on('before:browser:launch', (browser = {}, launchOptions) => {
     prepareAudit(launchOptions);
   });
 
-  on("task", {
-    lighthouse: lighthouse((lighthouseReport) => {
-      console.log("---- Writing lighthouse report to disk ----");
+  on('task', {
+    lighthouse: lighthouse(lighthouseReport => {
+      console.log('---- Writing lighthouse report to disk ----');
 
-      fs.writeFile("lighthouse.html", lighthouseReport.report, (error) => {
-        error ? console.log(error) : console.log("Report created successfully");
+      fs.writeFile('lighthouse.html', lighthouseReport.report, error => {
+        error ? console.log(error) : console.log('Report created successfully');
       });
     }),
   });

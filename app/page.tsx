@@ -1,9 +1,9 @@
-import Image from 'next/image'
+import { DarkModeButton } from '../components';
 
 export default function Home() {
   return (
     <main>
-      Home
+      <DarkModeButton />
     </main>
   )
 }

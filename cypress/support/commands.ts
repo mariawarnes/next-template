@@ -24,8 +24,8 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
-import "@cypress-audit/lighthouse/commands";
-import "@cypress-audit/pa11y/commands";
+import '@cypress-audit/lighthouse/commands';
+import '@cypress-audit/pa11y/commands';
 
 // Cypress.Commands.add("login", () => {
 //   window.localStorage.setItem("username", "mfrachet");
@@ -33,4 +33,4 @@ import "@cypress-audit/pa11y/commands";
 // });
 
 // Prevent TypeScript from reading file as legacy script
-export {}
+export {};

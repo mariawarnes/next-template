@@ -75,9 +75,9 @@ const screenEmulationMetrics = {
 };
 
 const MOTOG4_USERAGENT =
-  "Mozilla/5.0 (Linux; Android 7.0; Moto G (4)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4695.0 Mobile Safari/537.36 Chrome-Lighthouse"; // eslint-disable-line max-len
+  'Mozilla/5.0 (Linux; Android 7.0; Moto G (4)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4695.0 Mobile Safari/537.36 Chrome-Lighthouse'; // eslint-disable-line max-len
 const DESKTOP_USERAGENT =
-  "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4695.0 Safari/537.36 Chrome-Lighthouse"; // eslint-disable-line max-len
+  'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4695.0 Safari/537.36 Chrome-Lighthouse'; // eslint-disable-line max-len
 
 const userAgents = {
   mobile: MOTOG4_USERAGENT,
@@ -86,13 +86,13 @@ const userAgents = {
 
 /** @type {LH.Config.Settings} */
 const defaultSettings = {
-  output: "json",
+  output: 'json',
   maxWaitForFcp: 30 * 1000,
   maxWaitForLoad: 45 * 1000,
 
-  formFactor: "desktop",
+  formFactor: 'desktop',
   throttling: throttling.desktopDense4G,
-  throttlingMethod: "simulate",
+  throttlingMethod: 'simulate',
   screenEmulation: screenEmulationMetrics.desktop,
   emulatedUserAgent: userAgents.desktop,
 
@@ -100,12 +100,12 @@ const defaultSettings = {
   gatherMode: false,
   disableStorageReset: false,
   debugNavigation: false,
-  channel: "node",
+  channel: 'node',
 
   // the following settings have no defaults but we still want ensure that `key in settings`
   // in config will work in a typechecked way
   budgets: null,
-  locale: "en-US", // actual default determined by Config using lib/i18n
+  locale: 'en-US', // actual default determined by Config using lib/i18n
   blockedUrlPatterns: null,
   additionalTraceCategories: null,
   extraHeaders: null,
@@ -117,8 +117,8 @@ const defaultSettings = {
 
 /** @type {LH.Config.Pass} */
 const defaultPassConfig = {
-  passName: "defaultPass",
-  loadFailureMode: "fatal",
+  passName: 'defaultPass',
+  loadFailureMode: 'fatal',
   recordTrace: false,
   useThrottling: false,
   pauseAfterFcpMs: 0,
@@ -126,14 +126,14 @@ const defaultPassConfig = {
   networkQuietThresholdMs: 0,
   cpuQuietThresholdMs: 0,
   blockedUrlPatterns: [],
-  blankPage: "about:blank",
+  blankPage: 'about:blank',
   gatherers: [],
 };
 
 /** @type {Required<LH.Config.NavigationJson>} */
 const defaultNavigationConfig = {
-  id: "default",
-  loadFailureMode: "fatal",
+  id: 'default',
+  loadFailureMode: 'fatal',
   disableThrottling: false,
   disableStorageReset: false,
   pauseAfterFcpMs: 0,
@@ -141,7 +141,7 @@ const defaultNavigationConfig = {
   networkQuietThresholdMs: 0,
   cpuQuietThresholdMs: 0,
   blockedUrlPatterns: [],
-  blankPage: "about:blank",
+  blankPage: 'about:blank',
   artifacts: [],
 };
 

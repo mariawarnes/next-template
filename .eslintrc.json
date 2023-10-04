@@ -1,7 +1,10 @@
 {
   "root": true,
-  "extends": ["next/core-web-vitals", "plugin:jsx-a11y/recommended", "plugin:cypress/recommended"],
-  "plugins": ["testing-library", "cypress"],
+  "extends": ["next/core-web-vitals", "plugin:jsx-a11y/recommended", "plugin:cypress/recommended", "prettier"],
+  "plugins": ["testing-library", "cypress", "prettier"],
+  "rules": {
+    "prettier/prettier": "error"
+  },
   "overrides": [
     // Only uses Testing Library lint rules in test files
     {

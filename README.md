@@ -23,6 +23,7 @@ $ npm install
 - `npm run dev`: Start the development server using Next.js.
 - `npm run build`: Build the production-ready application.
 - `npm run start`: Start the production server.
+- `npm run format`: Run Prettier formatting.
 - `npm run lint`: Run linting checks using ESLint.
 - `npm run test`: Run Jest tests in watch mode.
 - `npm run test:ci`: Run Jest tests in continuous integration mode.
@@ -33,8 +34,9 @@ $ npm install
 
 ### Production Dependencies
 
-- `@headlessui/react`: React UI component library.
-- `next`: The Next.js framework.
+- `@headlessui/react`: React components for building accessible and customizable UIs.
+- `next`: Framework for server-rendered React applications.
+- `next-themes`: Utility for managing themes in Next.js applications.
 - `react`: React library.
 - `react-dom`: React DOM library.
 
@@ -65,5 +67,7 @@ $ npm install
 - `tailwindcss`: Utility-first CSS framework.
 - `ts-node`: TypeScript execution environment.
 - `typescript`: TypeScript language support.
+- `prettier`: Opinionated code formatter.
+- `prettier-plugin-tailwindcss`: Prettier plugin for Tailwind CSS.
 
 Please note that this is not an exhaustive list of dependencies, and the project may have additional dependencies. Refer to the `package.json` file for a complete list.

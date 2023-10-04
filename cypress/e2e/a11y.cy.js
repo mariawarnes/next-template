@@ -3,7 +3,7 @@
 const thresholds = {
   performance: 85,
   accessibility: 50,
-  "best-practices": 85,
+  'best-practices': 85,
   seo: 85,
   pwa: 50,
 };
@@ -12,9 +12,9 @@ const lighthouseOptions = {};
 
 // Define desktop-specific configuration
 const lighthouseConfig = {
-  settings: { output: "html" },
-  extends: "lighthouse:default",
-  formFactor: "desktop",
+  settings: { output: 'html' },
+  extends: 'lighthouse:default',
+  formFactor: 'desktop',
   screenEmulation: {
     width: 1350,
     height: 940,
@@ -32,12 +32,12 @@ const lighthouseConfig = {
   },
 };
 
-describe("Lighthouse Audit", () => {
+describe('Lighthouse Audit', () => {
   beforeEach(() => {
-    cy.visit("/");
+    cy.visit('/');
   });
 
-  it("should pass Lighthouse audit with custom thresholds", () => {
+  it('should pass Lighthouse audit with custom thresholds', () => {
     cy.lighthouse(thresholds, lighthouseOptions, lighthouseConfig);
   });
 });

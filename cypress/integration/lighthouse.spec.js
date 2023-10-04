@@ -1,11 +1,11 @@
-import LighthouseConfig from "./config";
+import LighthouseConfig from './config';
 
-describe("Lighthouse", () => {
+describe('Lighthouse', () => {
   before(() => {
-    cy.visit("/");
+    cy.visit('/');
   });
 
-  it("should ", () => {
+  it('should ', () => {
     const thresholds = {
       performance: 70,
     };
