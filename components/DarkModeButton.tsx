@@ -2,20 +2,22 @@
 
 import React from 'react';
 import { useTheme } from 'next-themes';
+import { SunIcon, MoonIcon } from '@heroicons/react/24/outline';
+import CustomButton from './CustomButton';
 
 const DarkModeButton = () => {
   const { theme, setTheme } = useTheme();
 
+  const handleToggle = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+  };
+
   return (
-    <button
-      className="px-4 py-2 text-white dark:text-primary-blue-dark bg-primary-blue-dark dark:bg-white font-semibold rounded-md"
-      aria-label="Toggle Dark Mode"
-      onClick={() => {
-        setTheme(theme === 'light' ? 'dark' : 'light');
-      }}
-    >
-      {theme === 'light' ? 'Dark' : 'Light'} Mode
-    </button>
+    <CustomButton
+      Icon={theme === 'light' ? MoonIcon : SunIcon}
+      label="Toggle Light/Dark Mode"
+      handleClick={handleToggle}
+    />
   );
 };
 

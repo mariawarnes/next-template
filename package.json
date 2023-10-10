@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
     "next": "latest",
     "next-themes": "^0.2.1",
     "react": "latest",
@@ -29,7 +30,7 @@
     "@types/jest": "^29.5.5",
     "@types/jest-axe": "^3.5.6",
     "@types/node": "latest",
-    "@types/react": "latest",
+    "@types/react": "^18.2.25",
     "@types/react-dom": "latest",
     "autoprefixer": "latest",
     "cypress": "^13.3.0",

@@ -1,3 +1,4 @@
 import DarkModeButton from './DarkModeButton';
+import Header from "./Header";
 
-export { DarkModeButton };
+export { Header, DarkModeButton };
