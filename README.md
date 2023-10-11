@@ -52,7 +52,7 @@ $ npm install
 
 - `prettier`: Opinionated code formatter.
 
-####TypeScript dependencies
+**TypeScript dependencies**
 
 - `typescript`: TypeScript language support.
 - `ts-node`: TypeScript execution environment.
@@ -60,20 +60,20 @@ $ npm install
 - `@types/react-dom`: TypeScript type declarations for React DOM.
 - `@types/node`: TypeScript type declarations for Node.js.
 
-####Tailwind dependencies
+**Tailwind dependencies**
 
 - `postcss`: CSS preprocessor.
 - `autoprefixer`: CSS autoprefixer.
 - `tailwindcss`: Utility-first CSS framework.
 - `prettier-plugin-tailwindcss`: Prettier plugin for Tailwind CSS.
 
-####ESLint dependencies
+**ESLint dependencies**
 
 - `eslint`: ESLint for linting.
 - `eslint-config-next`: ESLint configuration for Next.js projects.
 - `eslint-plugin-jsx-a11y`: ESLint plugin for accessibility.
 
-####Jest dependencies
+**Jest dependencies**
 
 - `jest`: JavaScript testing framework.
 - `@types/jest`: TypeScript type declarations for Jest.
@@ -84,7 +84,7 @@ $ npm install
 - `@testing-library/user-event`: Testing utilities for user interactions.
 - `jest-environment-jsdom`: Jest environment for testing in a browser-like environment.
 
-####Cypress dependencies
+**Cypress dependencies**
 
 - `cypress`: End-to-end testing framework.
 - `start-server-and-test`: Utility to start servers and run tests.
@@ -93,7 +93,7 @@ $ npm install
 - `eslint-plugin-cypress`: ESLint plugin for Cypress.
 - `lighthouse`: Lighthouse for performance auditing.
 
-####Login/Auth dependencies
+**Login/Auth dependencies**
 
 - `@types/jsonwebtoken`: Provides TypeScript type definitions for JSON Web Tokens.
 - `graphql-request`: A tool for sending GraphQL queries to a GraphQL server.
