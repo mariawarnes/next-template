@@ -18,12 +18,32 @@
 ![GraphQL](https://img.shields.io/badge/GraphQL-%23E434AA.svg?style=flat&logo=graphql&logoColor=white)
 ![NextAuth](https://img.shields.io/badge/NextAuth-%23E4E4E4.svg?style=flat&logo=next.js&logoColor=black)
 
+- [Installation](#installation)
+- [Scripts](#scripts)
+- [Dependencies](#dependencies)
+- [Recommended VSCode Extensions](#recommended-vscode-extensions)
+
 ## Installation
+Open your command line interface (e.g., Terminal on macOS, Command Prompt on Windows, or a terminal emulator on Linux).
 
+Navigate to the directory where you want to clone the repository. You can use the cd command to change directories. For example, to clone the repository into your home directory on a Unix-like system:
 ```sh
-$ npm install
+cd ~
 ```
-
+Use the git clone command to clone the repository to the directory you cd'd to:
+> Note: If you don't have git installed, you will need to install it [here](https://git-scm.com/).
+```sh
+git clone https://github.com/mariawarnes/next-template.git
+```
+Git will download the repository and create a local copy in a directory named "next-template" (the same name as the repository) in your current location. You can then navigate into this directory to work with the cloned code:
+```sh
+cd next-template
+```
+Once you are inside the project directory, run the following command to install the project's dependencies using npm (Node Package Manager):
+> Note: If you don't have npm installed, you will need to install it, along with node [here](https://nodejs.org/en).
+```sh
+npm install
+```
 ## Scripts
 
 - `npm run dev`: Start the development server using Next.js.
@@ -52,7 +72,7 @@ $ npm install
 
 - `prettier`: Opinionated code formatter.
 
-####TypeScript dependencies
+**TypeScript dependencies**
 
 - `typescript`: TypeScript language support.
 - `ts-node`: TypeScript execution environment.
@@ -60,20 +80,20 @@ $ npm install
 - `@types/react-dom`: TypeScript type declarations for React DOM.
 - `@types/node`: TypeScript type declarations for Node.js.
 
-####Tailwind dependencies
+**Tailwind dependencies**
 
 - `postcss`: CSS preprocessor.
 - `autoprefixer`: CSS autoprefixer.
 - `tailwindcss`: Utility-first CSS framework.
 - `prettier-plugin-tailwindcss`: Prettier plugin for Tailwind CSS.
 
-####ESLint dependencies
+**ESLint dependencies**
 
 - `eslint`: ESLint for linting.
 - `eslint-config-next`: ESLint configuration for Next.js projects.
 - `eslint-plugin-jsx-a11y`: ESLint plugin for accessibility.
 
-####Jest dependencies
+**Jest dependencies**
 
 - `jest`: JavaScript testing framework.
 - `@types/jest`: TypeScript type declarations for Jest.
@@ -84,7 +104,7 @@ $ npm install
 - `@testing-library/user-event`: Testing utilities for user interactions.
 - `jest-environment-jsdom`: Jest environment for testing in a browser-like environment.
 
-####Cypress dependencies
+**Cypress dependencies**
 
 - `cypress`: End-to-end testing framework.
 - `start-server-and-test`: Utility to start servers and run tests.
@@ -93,9 +113,17 @@ $ npm install
 - `eslint-plugin-cypress`: ESLint plugin for Cypress.
 - `lighthouse`: Lighthouse for performance auditing.
 
-####Login/Auth dependencies
+**Login/Auth dependencies**
 
 - `@types/jsonwebtoken`: Provides TypeScript type definitions for JSON Web Tokens.
 - `graphql-request`: A tool for sending GraphQL queries to a GraphQL server.
 - `jsonwebtoken`: Creating and verify JSON Web Tokens for secure data user authentication.
 - `next-auth`: Library for user authentication and session management for Next.js applications.
+
+## Recommended VSCode Extensions
+
+- [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+  - Go to `Settings` > `editor.defaultFormatter` and set the Editor to Prettier
+- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
