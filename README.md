@@ -18,6 +18,11 @@
 ![GraphQL](https://img.shields.io/badge/GraphQL-%23E434AA.svg?style=flat&logo=graphql&logoColor=white)
 ![NextAuth](https://img.shields.io/badge/NextAuth-%23E4E4E4.svg?style=flat&logo=next.js&logoColor=black)
 
+- [Installation](#installation)
+- [Scripts](#scripts)
+- [Dependencies](#dependencies)
+- [Recommended VSCode Extensions](#recommended-vscode-extensions)
+
 ## Installation
 Open your command line interface (e.g., Terminal on macOS, Command Prompt on Windows, or a terminal emulator on Linux).
 
@@ -39,7 +44,6 @@ Once you are inside the project directory, run the following command to install 
 ```sh
 npm install
 ```
-
 ## Scripts
 
 - `npm run dev`: Start the development server using Next.js.
@@ -115,3 +119,11 @@ npm install
 - `graphql-request`: A tool for sending GraphQL queries to a GraphQL server.
 - `jsonwebtoken`: Creating and verify JSON Web Tokens for secure data user authentication.
 - `next-auth`: Library for user authentication and session management for Next.js applications.
+
+## Recommended VSCode Extensions
+
+- [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+  - Go to `Settings` > `editor.defaultFormatter` and set the Editor to Prettier
+- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
