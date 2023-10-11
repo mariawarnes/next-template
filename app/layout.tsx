@@ -1,7 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { ThemeProvider } from '../components/ThemeProvider';
-import { Header } from "../components";
+import { Header } from '../components';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -31,7 +31,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="bg-white dark:bg-black text-black dark:text-white">
-        <ThemeProvider attribute="class"><Header/>{children}</ThemeProvider>
+        <ThemeProvider attribute="class">
+          <Header />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
