@@ -19,9 +19,25 @@
 ![NextAuth](https://img.shields.io/badge/NextAuth-%23E4E4E4.svg?style=flat&logo=next.js&logoColor=black)
 
 ## Installation
+Open your command line interface (e.g., Terminal on macOS, Command Prompt on Windows, or a terminal emulator on Linux).
 
+Navigate to the directory where you want to clone the repository. You can use the cd command to change directories. For example, to clone the repository into your home directory on a Unix-like system:
 ```sh
-$ npm install
+cd ~
+```
+Use the git clone command to clone the repository to the directory you cd'd to:
+> Note: If you don't have git installed, you will need to install it [here](https://git-scm.com/).
+```sh
+git clone https://github.com/mariawarnes/next-template.git
+```
+Git will download the repository and create a local copy in a directory named "next-template" (the same name as the repository) in your current location. You can then navigate into this directory to work with the cloned code:
+```sh
+cd next-template
+```
+Once you are inside the project directory, run the following command to install the project's dependencies using npm (Node Package Manager):
+> Note: If you don't have npm installed, you will need to install it, along with node [here](https://nodejs.org/en).
+```sh
+npm install
 ```
 
 ## Scripts
