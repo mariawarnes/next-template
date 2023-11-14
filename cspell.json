@@ -1,0 +1,25 @@
+{
+  "import": ["@cspell/dict-typescript/cspell-ext.json"],
+  "useGitignore": true,
+  "language": "en-GB, en-US",
+  "ignorePaths": [
+    "cspell*.{yaml,json}",
+    "assets/options.schema.json",
+    "\\bconfig\\b",
+    ".eslintrc.json",
+    "tsconfig.json"
+  ],
+  "dictionaries": ["typescript", "places-dict", "mybond-dict"],
+  "dictionaryDefinitions": [
+    {
+      "name": "places-dict",
+      "path": "./.cspell/places-dict.txt",
+      "addWords": true
+    },
+    {
+      "name": "mybond-dict",
+      "path": "./.cspell/mybond-dict.txt",
+      "addWords": true
+    }
+  ]
+}

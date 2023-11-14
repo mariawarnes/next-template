@@ -1,32 +1,12 @@
-const { lighthouse, prepareAudit } = require('@cypress-audit/lighthouse');
-const { pa11y } = require('@cypress-audit/pa11y');
-const fs = require('fs');
+import { defineConfig } from "cypress";
 
-module.exports = {
-  video: false,
+export default defineConfig({
   e2e: {
-    baseUrl: 'http://localhost:3000',
-    setupNodeEvents(on, config) {
-      on('before:browser:launch', (browser = {}, launchOptions) => {
-        prepareAudit(launchOptions);
-      });
-
-      on('task', {
-        lighthouse: lighthouse(lighthouseReport => {
-          console.log('---- Writing lighthouse report to disk ----');
-
-          fs.writeFile(
-            'lighthouse.html',
-            lighthouseReport.report,
-            (error: any) => {
-              error
-                ? console.log(error)
-                : console.log('Report created successfully');
-            },
-          );
-        }),
-        pa11y: pa11y(console.log.bind(console)),
-      });
-    },
+    baseUrl: "http://localhost:3000",
+    viewportWidth: 1920,
+    viewportHeight: 1080,
+    chromeWebSecurity: false,
+    defaultCommandTimeout: 10000,
+    video: true,
   },
-};
+});

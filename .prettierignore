@@ -1,0 +1,7 @@
+node_modules
+**/*.{json,yaml}
+**/*.config
+**/*.config.ts
+**/*.config.js
+__tests__
+tests

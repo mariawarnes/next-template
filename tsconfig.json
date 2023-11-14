@@ -8,7 +8,7 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": false,
+    "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -17,6 +17,12 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    },
     "incremental": true,
     "plugins": [
       {
@@ -31,6 +37,6 @@
     ".next/types/**/*.ts"
 , "cypress/plugins/index.js"  ],
   "exclude": [
-    "node_modules"
+    "node_modules", "*.config*"
   ]
 }

@@ -1,24 +1,28 @@
-import type { Config } from 'tailwindcss';
+import type { Config } from "tailwindcss";
+import { primaryColor } from './constants';
 
 const config: Config = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   mode: 'jit',
   darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        'black-100': '#2B2C35',
-        grey: '#747A88',
-        gold: '#EBB54B',
-        'primary-blue': {
-          dark: '#2B2D42',
-          light: '#8D99AE',
+        'custom-bg': {
+          light: '#ffffff',
+          dark: '#2c2c2c',
         },
-      },
+        'custom-text': {
+          light: '#2c2c2c',
+          dark: '#cccccc',
+        },
+        'primary-color': primaryColor,
+        'secondary-color': '#2B8D42',
+      }
     },
   },
   plugins: [],

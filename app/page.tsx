@@ -1,5 +1,9 @@
-import { DarkModeButton } from '../components';
+import { Example1, Example2 } from '@/components';
 
 export default function Home() {
-  return <main>{/* Stuff */}</main>;
+  return (
+    <main id="main-content">
+
+    </main>
+  );
 }
