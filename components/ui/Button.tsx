@@ -12,7 +12,7 @@ const Button = ({
 }: ButtonProps) => {
   return (
     <button
-      className={`${customStyles} min-h-[44px] min-w-[44px] px-3 py-2 text-center lg:min-h-[24px] lg:min-w-[24px] ${
+      className={`${customStyles} custom-button ${
         disabled && `cursor-not-allowed opacity-50`
       }`}
       disabled={disabled}

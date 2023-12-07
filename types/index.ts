@@ -1,4 +1,7 @@
-import type { MouseEventHandler } from 'react';
+
+import type { MouseEventHandler, ChangeEventHandler, ReactNode } from 'react';
+import type { ImageProps } from 'next/image';
+
 export interface ButtonProps {
   text?: string;
   Icon?: React.ElementType;
@@ -24,4 +27,19 @@ export interface SubMenuProps {
     title: string;
     links: Link[];
   };
+}
+export interface LightDarkImageProps extends ImageProps {
+  lightImage: string;
+  darkImage: string;
+}
+
+export interface InputProps {
+  handleChange: ChangeEventHandler<HTMLInputElement>;
+  type: 'text' | 'password';
+  id: string;
+  label: string;
+  value: string;
+  required: boolean;
+  placeholderStyles: string;
+  inputStyles: string;
 }

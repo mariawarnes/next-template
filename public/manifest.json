@@ -1,6 +1,6 @@
 {
-  "name": "myBond",
-  "short_name": "myBond",
+  "name": "Title",
+  "short_name": "Title",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",

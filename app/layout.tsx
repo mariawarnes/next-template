@@ -1,9 +1,11 @@
 import './globals.css';
 
 import type { Metadata } from 'next';
+import { Open_Sans } from 'next/font/google';
 
 import { Footer, Header, SkipLink, ThemeProvider } from '@/components';
 import { companyName, primaryColor } from '@/constants';
+
 export const metadata: Metadata = {
   title: companyName,
   description: '',
@@ -26,6 +28,14 @@ export const metadata: Metadata = {
 export const viewport = {
   themeColor: primaryColor,
 };
+
+// https://mikebifulco.com/posts/custom-fonts-with-next-font-and-tailwind
+const openSans = Open_Sans({
+  subsets: ['latin'],
+  variable: '--font-open-sans',
+  display: 'swap',
+  weight: ['400', '600', '700'],
+});
 
 export default function RootLayout({
   children,

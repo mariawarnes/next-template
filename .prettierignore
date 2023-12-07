@@ -5,3 +5,7 @@ node_modules
 **/*.config.js
 __tests__
 tests
+build
+coverage
+.gitlab
+.vscode

@@ -11,6 +11,9 @@ const config: Config = {
   darkMode: 'class',
   theme: {
     extend: {
+      fontFamily: {
+        "open-sans": "var(--font-open-sans)",
+      },
       colors: {
         'custom-bg': {
           light: '#ffffff',
