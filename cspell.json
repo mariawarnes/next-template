@@ -9,11 +9,11 @@
     ".eslintrc.json",
     "tsconfig.json"
   ],
-  "dictionaries": ["typescript", "example-dict"],
+  "dictionaries": ["typescript", "dev-dict"],
   "dictionaryDefinitions": [
     {
-      "name": "example-dict",
-      "path": "./.cspell/example-dict.txt",
+      "name": "dev-dict",
+      "path": "./.cspell/dev-dict.txt",
       "addWords": true
     }
   ],

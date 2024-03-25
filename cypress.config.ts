@@ -2,11 +2,16 @@ import { defineConfig } from "cypress";
 
 export default defineConfig({
   e2e: {
-    baseUrl: "http://localhost:3000",
-    viewportWidth: 1920,
-    viewportHeight: 1080,
-    chromeWebSecurity: false,
-    defaultCommandTimeout: 10000,
-    video: true,
+    baseUrl: 'http://localhost:3000',
+    setupNodeEvents(on, config) {},
   },
+  component: {
+    devServer: {
+      framework: "next",
+      bundler: "webpack",
+    },
+  },
+  env: {
+    password: 'test'
+  }
 });

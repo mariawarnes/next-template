@@ -17,7 +17,11 @@ const DarkModeButton = () => {
   }
 
   return (
-    <select value={theme} onChange={e => setTheme(e.target.value)}>
+    <select
+      name="Colour Theme Selector"
+      value={theme}
+      onChange={e => setTheme(e.target.value)}
+    >
       <option value="system">System</option>
       <option value="dark">Dark</option>
       <option value="light">Light</option>
