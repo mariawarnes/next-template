@@ -23,7 +23,7 @@
 </tr>
 <tr>
 <td><strong>Testing</strong></td>
-<td><img src="https://img.shields.io/badge/React%20Testing%20Library-%23E33332.svg?style=flat&logo=testing-library&logoColor=white" alt="React Testing Library"> <img src="https://img.shields.io/badge/Jest-%23C21325.svg?style=flat&logo=jest&logoColor=white" alt="Jest"> <img src="https://img.shields.io/badge/Cypress-%23E95E25.svg?style=flat&logo=cypress&logoColor=white" alt="Cypress"> <img src="https://img.shields.io/badge/Lighthouse-%23F47A20.svg?style=flat&logo=lighthouse&logoColor=white" alt="Lighthouse"></td>
+<td><img src="https://img.shields.io/badge/Jest-%23C21325.svg?style=flat&logo=jest&logoColor=white" alt="Jest"> <img src="https://img.shields.io/badge/Cypress-%23E95E25.svg?style=flat&logo=cypress&logoColor=white" alt="Cypress"></td>
 </tr>
 </tbody></table>
 
@@ -46,4 +46,5 @@
 - `sharp`: Image optimisation library.
 - `react-icons`: React icons library.
 - `cspell`: Spell checker.
-- `jest-axe`: A11y 
+- `@testing-library`: Library for testing React components.
+- `@cypress-audit/lighthouse`, `@cypress-audit/pa11y`, `jest-axe`: A11y and performance testing.
