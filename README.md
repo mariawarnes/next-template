@@ -10,6 +10,10 @@
 <td><img src="https://img.shields.io/badge/Next.js-%23000000.svg?style=flat&logo=next.js&logoColor=white" alt="Next.js"></td>
 </tr>
 <tr>
+<td><strong>Compiler</strong></td>
+<td><img src="https://img.shields.io/badge/SWC-%23F0C66A.svg?style=flat&logo=swc&logoColor=black" alt="SWC"></td>
+</tr>
+<tr>
 <td><strong>Styles</strong></td>
 <td><img src="https://img.shields.io/badge/Tailwind-%23006AFF.svg?style=flat&logo=tailwind-css&logoColor=white" alt="Tailwind"></td>
 </tr>
@@ -19,7 +23,7 @@
 </tr>
 <tr>
 <td><strong>Formatting &amp; Linting</strong></td>
-<td><img src="https://img.shields.io/badge/Prettier-%23F7B93E.svg?style=flat&logo=prettier&logoColor=white" alt="Prettier"> <img src="https://img.shields.io/badge/ESLint-%204C38BE.svg?style=flat&logo=eslint&logoColor=white" alt="ESLint"></td>
+<td><img src="https://img.shields.io/badge/Prettier-%23F7B93E.svg?style=flat&logo=prettier&logoColor=black" alt="Prettier"> <img src="https://img.shields.io/badge/ESLint-%204C38BE.svg?style=flat&logo=eslint&logoColor=white" alt="ESLint"></td>
 </tr>
 <tr>
 <td><strong>Testing</strong></td>
