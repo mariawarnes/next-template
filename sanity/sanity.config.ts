@@ -11,10 +11,6 @@ const singletonActions = new Set(["publish", "discardChanges", "restore"])
 // Define the singleton document types
 const singletonTypes = new Set(["settings"])
 
-let queryString = window.location.search
-let urlParams = new URLSearchParams(queryString)
-let userType = urlParams.get('user')
-
 export default defineConfig({
   name: 'default',
   title: 'Admin',
@@ -62,9 +58,6 @@ function getDocuments(){
                     .schemaType("settings")
                     .documentId("settings")
                 ),
-
-
-
               
               // Sortable document types
 
@@ -82,13 +75,8 @@ function getDocuments(){
             
               // Icons: https://icons.sanity.build/all
 
-
-     
-
-
             ]),
       }),
       visionTool(), 
-    ]
-  }
+    ];
 }
